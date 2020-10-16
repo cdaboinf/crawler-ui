@@ -1,0 +1,44 @@
+<div class="container-fluid p-2"></div>
+<div class="container bg-info rounded p-5">
+  <ul class="list-group">
+    <li class="list-group-item">
+      Spot: {{surfbrake.name}}
+    </li>
+    <li class="list-group-item">
+      {{surfbrake.description}}
+    </li>
+  </ul>
+</div>
+<div class="container-fluid"><br></div>
+<div class="container bg-info rounded p-5">
+  <ul class="list-group">
+    <li class="list-group-item">Wave: {{surfbrake.wave_height}}</li>
+    <li class="list-group-item">Air Temp: {{surfbrake.temperature}}</li>
+    <li class="list-group-item">Water Temp: {{surfbrake.water_temperature}}</li>
+    <li class="list-group-item">Rain Chances: {{surfbrake.rain_posibility}}</li>
+  </ul>
+</div>
+<div class="container-fluid"><br></div>
+<div class="container bg-info rounded p-5">
+  <ul class="list-group">
+    <li class="list-group-item">
+      Conditions: {{surfbrake.summary}}
+    </li>
+  </ul>
+</div>
+<div class="container-fluid"><br></div>
+<div class="container bg-info rounded p-5">
+  <ul class="list-group">
+    <li class="list-group-item">
+      Tide: {{surfbrake.tide}}
+    </li>
+    <li class="list-group-item">
+      Wind: {{surfbrake.wind}}
+    </li>
+  </ul>
+</div>
+<div class="container-fluid"><br></div>
+<div class="container rounded p-5">
+  <app-line-chart [data]= 'tide'></app-line-chart>
+</div>
+
